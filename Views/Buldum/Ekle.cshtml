@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Buldum!";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Sen çok mübarek bir insansın. Bulduğun tarihi ve yeri kesin bir şekilde hatırlamıyorsan bile, belirttiğin aralığın doğru olduğundan emin olmaya çalışmalısın.</p>
+
+<form style="width:40%">
+    
+    <div class="mb-3">
+        <label for="ttl" class="form-label">İlan başlığı</label>
+        <input type="text" class="form-control" id="title">
+    </div>
+    
+    <div class="mb-3">
+        <label for="dsc" class="form-label">İlan açıklaması</label>
+        <input type="text" class="form-control" id="dsc">
+    </div>
+
+    <div class="mb-3">
+        <label for="foto" class="form-label">Fotoğraf ekleyin</label>
+        <input type="file" class="form-control" id="foto">
+    </div>
+
+    <div class="mb-3">
+        <label for="InputEmail" class="form-label">E-posta adresi</label>
+        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailYardim">
+        <div id="emailYardim" class="form-text">Korkma! Bilgilerini paylaşmayacağız, ilâna ulaşmak isteyen birileri olduğunda onun bilgilerini sana göndereceğiz.</div>
+    </div>
+    <div class="mb-3">
+        <label for="tarih" class="form-label">Şu tarihte buldum</label>
+        <input type="number" class="form-control" min="1900" max="2099" step="1" value="2023" />
+    </div>
+
+    <div>
+        <label for="konum" class="form-label">Şurada buldum</label>
+        <select class="form-select" id="konum">
+            <option selected>Bir şehir seçin</option>
+            <option value="1">Ankara</option>
+            <option value="2">İstanbul</option>
+            <option value="3">İzmir</option>
+        </select>
+    </div><br>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
